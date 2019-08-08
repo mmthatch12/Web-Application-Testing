@@ -1,4 +1,3 @@
-import { render } from 'react-testing-library'
 import { strike } from './Count'
 
 
