@@ -3,7 +3,10 @@ import React from 'react';
 const Dashboard = () => {
     return (
         <div>
-            <h2>Dashboard.js through Display.js</h2>
+            <button>Strike</button>
+            <button>Ball</button>
+            <button>Foul</button>
+            <button>hit</button>
         </div>
     )
 }

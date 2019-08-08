@@ -1,4 +1,6 @@
+import { render } from 'react-testing-library'
 import { strike } from './Count'
+
 
 
 //When strike button is clicked it should add one to current state unless current state is 3 then it should reset to zero'
