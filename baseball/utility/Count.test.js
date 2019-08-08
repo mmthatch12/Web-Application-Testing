@@ -1,5 +1,5 @@
 import { strike } from './Count'
-import { italic } from 'ansi-colors';
+
 
 describe('Count.js', () => {
     describe('strike()', () => {
