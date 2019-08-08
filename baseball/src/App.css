@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+}
+
+.strikes {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+}
+
+.balls {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.bord {
+  border: 5px solid red;
+}
