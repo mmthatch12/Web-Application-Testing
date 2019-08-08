@@ -1,0 +1,1 @@
+import { strike } from './Count'
