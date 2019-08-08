@@ -9,12 +9,18 @@ const Display  = () => {
 
     return (
         <div>
-            <h1>From Display.js</h1>
-            <h2>Strikes</h2>
-            <h2>{strikeCount}</h2>
-
-            <h2>Balls</h2>
-            <h2>{ballCount}</h2>
+            <h1>At Bat Tracker</h1>
+            <div className='display'>
+                <div className='strikes'>
+                    <h2>Strikes</h2>
+                    <h2 className='bord'>{strikeCount}</h2>
+                </div>
+                <div className='balls'>
+                    <h2>Balls</h2>
+                    <h2 className='bord'>{ballCount}</h2>
+                </div>
+            </div>
+            
             <Dashboard 
                 strikeCount={strikeCount}
                 setStrikeCount={setStrikeCount}

@@ -10,21 +10,29 @@ const Dashboard = ({ strikeCount, setStrikeCount, ballCount, setBallCount }) => 
         }
     }
 
-    
+    const ballHandle = () => {
+        if(ballCount <=2 ) {
+            setBallCount(ballCount + 1)
+        } else {
+            setBallCount(0);
+            setStrikeCount(0);
+        }
+    }
 
+    const foulHandle = () => {
+        if(strikeCount <=1 ) {
+            setStrikeCount(strikeCount + 1)
+        } 
+    }
 
     return (
         <div>
             <button onClick={strikeHandle}>Strike</button>
-            <button onClick={() => {ballCount >= 3 ? setBallCount(ballCount - ballCount) : setBallCount(ballCount + 1)}}>Ball</button>
+            <button onClick={ballHandle}>Ball</button>
+            <button onClick={foulHandle}>Foul</button>
+            <button onClick={() => {setStrikeCount(0); setBallCount(0)}}>Hit</button>
         </div>
     )
 }
 
 export default Dashboard
-
-// <button onClick={() => }>Ball</button>
-// <button onClick={() => }>Foul</button>
-// <button onClick={() => }>hit</button>
-
-//strikeCount >= 2 ? setStrikeCount(0) && setBallCount(0) : setStrikeCount(strikeCount + 1)}
