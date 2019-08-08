@@ -14,10 +14,6 @@ describe('<Display />', () => {
        disp.getByText(/strikes/i) 
     })
 
-    it('should show the current strike count <3', () => {
-        const sCount = render(<Display />)
-        sCount = getByDisplayValue({strikeCount} < 3)
-    })
 
     it('should render a header Balls', () => {
         const bHead = render(<Display />)
