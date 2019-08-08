@@ -10,6 +10,11 @@ const Display  = () => {
     return (
         <div>
             <h1>From Display.js</h1>
+            <h2>Strikes</h2>
+            <h2>{strikeCount}</h2>
+
+            <h2>Balls</h2>
+            <h2>{ballCount}</h2>
             <Dashboard 
                 strikeCount={strikeCount}
                 setStrikeCount={setStrikeCount}
